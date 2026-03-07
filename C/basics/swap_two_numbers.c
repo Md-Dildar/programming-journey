@@ -7,11 +7,11 @@ int main()
     scanf("%d", &x);
     printf("Enter a number y: ");
     scanf("%d", &y);
-    printf("Before swapping: x = %d and y = %d", x, y);
+    printf("Before swapping: x = %d and y = %d\n", x, y);
     temp = x;
     x = y;
     y = temp;
-    printf("After swapping: x = %d and y = %d", x, y);
+    printf("After swapping: x = %d and y = %d\n", x, y);
 
     return 0;
 }
