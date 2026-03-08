@@ -2,18 +2,37 @@
 
 int main()
 {
-    char ch;
-    printf("Enter a character");
-    scanf("%c", &ch);
-    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+    int a, b, c, d, e;
+    printf("Enter maths number: ");
+    scanf("%d", &a);
+    printf("Enter physics number: ");
+    scanf("%d", &b);
+    printf("Enter chemistry number: ");
+    scanf("%d", &c);
+    printf("Enter english number: ");
+    scanf("%d", &d);
+    printf("Enter hindi number: ");
+    scanf("%d", &e);
+    int total = a + b + c + d + e;
+    if (total >= 90 && total <= 100)
     {
-        printf("It is an alphabet");
+        printf("Your grade is: A\n");
     }
-    else if (ch >= 0 && ch <= 9)
-        printf("It is a number");
+    else if (total >= 80 && total <= 89)
+    {
+        printf("Your grade is: B\n");
+    }
+    else if (total >= 70 && total <= 79)
+    {
+        printf("Your grade is: C\n");
+    }
+    else if (total >= 60 && total <= 69)
+    {
+        printf("Your grade is: D\n");
+    }
     else
     {
-        printf("%c is neither alphabet nor number", ch);
+        printf("Your grade is: f\n");
     }
 
     return 0;
