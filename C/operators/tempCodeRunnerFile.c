@@ -2,16 +2,18 @@
 
 int main()
 {
-    int x;
-    printf("Enter year: ");
-    scanf("%d", &x);
-    if (x % 4 == 0)
+    char ch;
+    printf("Enter a character");
+    scanf("%c", &ch);
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
     {
-        printf("%d is a leap year\n", x);
+        printf("It is an alphabet");
     }
+    else if (ch >= 0 && ch <= 9)
+        printf("It is a number");
     else
     {
-        printf("%d is not a leap year\n", x);
+        printf("%c is neither alphabet nor number", ch);
     }
 
     return 0;
