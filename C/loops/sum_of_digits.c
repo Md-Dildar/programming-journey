@@ -1,20 +1,14 @@
-#include <stdio.h>
+# include <stdio.h>
 
 int main()
 {
-    int num, sum = 0, digit;
-
+    int n, ld;
     printf("Enter a number: ");
-    scanf("%d", &num);
-
-    while (num != 0)
-    {
-        digit = num % 10;
-        sum = sum + digit;
-        num = num / 10;
-    }
-
-    printf("Sum of digits: %d\n", sum);
-
+    scanf("%d", &n);
+    while(n != 0){
+    ld = n % 10;
+    n = n / 10;
+    printf("%d",ld);
+}
     return 0;
 }
