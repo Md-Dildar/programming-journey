@@ -2,12 +2,21 @@
 
 int main()
 {
-    for (int i = 1; 1 <= 20; i += 2)
+    int x, prime = 0;
+    printf("Enter a number: ");
+    scanf("%d", &x);
+    for (int i = 2; i < x; i++)
     {
-        printf("%d ", i);
+        if (x % i == 0)
+        {
+            printf("%d is not a prime number", x);
+            break;
+        }
+        else if (prime == 0)
+        {
+            printf("%d is a prime number", x);
+            break;
+        }
     }
-
-    printf("\n");
-
     return 0;
 }
