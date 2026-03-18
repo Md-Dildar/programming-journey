@@ -2,21 +2,19 @@
 
 int main()
 {
-    int x, prime = 0;
+    int n, min = 0, num;
     printf("Enter a number: ");
-    scanf("%d", &x);
-    for (int i = 2; i < x; i++)
+    scang("%d", &n);
+    while (n > 0)
     {
-        if (x % i == 0)
+        num = n % 10;
+        if (num < min)
         {
-            printf("%d is not a prime number", x);
-            break;
+            min = num;
         }
-        else if (prime == 0)
-        {
-            printf("%d is a prime number", x);
-            break;
-        }
+        n = n / 10;
     }
+    printf("%d is the smallest digit", min);
+
     return 0;
 }
